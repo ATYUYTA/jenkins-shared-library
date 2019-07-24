@@ -11,6 +11,6 @@ def call(String buildResult) {
     slackSend color: "warning", message: "${env.JOB_NAME} - #${env.BUILD_NUMBER} was unstable\nLink : ${env.BUILD_URL}"
   }
   else {
-    slackSend color: "danger", message: "${env.JOB_NAME} - #${env.BUILD_NUMBER} its resulat was unclear\nLink : ${env.BUILD_URL}"	
+    slackSend color: "danger", message: "${env.JOB_NAME} - #${env.BUILD_NUMBER} its result was unclear\nLink : ${env.BUILD_URL}"	
   }
 }
